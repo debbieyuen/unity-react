@@ -23,14 +23,9 @@
   min-height: 100vh;
   display: flex;
   width: 100%;
-  font-family: "gigalypse", sans-serif;
-  font-weight: 800;
   font-style: normal;;
   flex-direction: row;
-  /* align-items: horizontal; */
-  /* justify-content: horizontal; */
   font-size: calc(10px + 2vmin);
-  /* color: white; */
 }
 
 .App-link {
