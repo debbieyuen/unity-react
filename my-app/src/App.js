@@ -1,11 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import { Unity, useUnityContext } from "react-unity-webgl";
 
 function App() {
+  const { unityProvider } = useUnityContext({
+    loaderUrl: "build/myunityapp.loader.js",
+    dataUrl: "build/myunityapp.data",
+    frameworkUrl: "build/myunityapp.framework.js",
+    codeUrl: "build/myunityapp.wasm",
+  });
+
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Unity unityProvider={unityProvider} />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
