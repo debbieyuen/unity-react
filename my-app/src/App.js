@@ -16,45 +16,28 @@ const unityContext = new UnityContext({
 function App() {
   return (
     <div className="App">
-      {/* <h1>hi debbie</h1> */}
-      {/* <div>
-        <header>Octocat</header>
-        <button>Page 1</button>
-      </div> */}
-      
-      
       <div className ="Unity">
         <Unity unityContext={unityContext} 
         style= {{
-          width: "100%",
+          height: "100vh",
+          // width: "100%",
+          position: "absolute",
+          top: 0,
+          left: 0,
           justifySelf: "center",
           alignSelf: "center",
-          ovrflow: "hidden",
+          overflow: "hidden",
         }}/>  
+      </div>
+
+      {/* <h1>hi debbie</h1> */}
+      <div className="HeaderBar">
+        <h2>Octocat World</h2>
+        {/* <div className="Button">Hi</div> */}
+        {/* <button>Page 1</button> */}
       </div>
     </div>
   );
 }
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <Unity unityProvider={unityProvider} />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 export default App;
